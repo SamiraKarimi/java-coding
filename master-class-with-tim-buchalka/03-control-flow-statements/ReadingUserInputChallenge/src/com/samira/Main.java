@@ -10,7 +10,8 @@ public class Main {
         int counter = 0;
         int sum = 0;
 
-        while (true){
+//        while (true){
+        while(counter < 10){
          int order = counter + 1;
          System.out.println("Enter number #" + order + ":");
          boolean isAnInt = scanner.hasNextInt();
@@ -18,16 +19,17 @@ public class Main {
              int number = scanner.nextInt();
              counter ++;
              sum += number;
-             if (counter == 10){
-                 System.out.println(sum);
-                 break;
-             }
+//             if (counter == 10){
+//                 System.out.println(sum);
+//                 break;
+//             }
          }else {
              System.out.println("Invalid number!");
          }
          scanner.nextLine();
 
      }
+      System.out.println("sum = " + sum);
      scanner.close();
 
 
