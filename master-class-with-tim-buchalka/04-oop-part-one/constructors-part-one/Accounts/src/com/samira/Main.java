@@ -1,22 +1,20 @@
 package com.samira;
 
-import java.util.AbstractCollection;
-
 public class Main {
 
     public static void main(String[] args) {
-      Account samirasAcount = new Account();
-      samirasAcount.setNumber("12345");
-      samirasAcount.setBalance(0.00);
-      samirasAcount.setCustomerName("Samira Karimi");
+      Account samirasAccount = new Account("77777",0.00,"Samira Karimi");
 
-      samirasAcount.withdrawal(100.00);
+      System.out.println(samirasAccount.getNumber());
+      System.out.println(samirasAccount.getBalance());
+      System.out.println(samirasAccount.getCustomerName());
 
-      samirasAcount.deposit(50.00);
-      samirasAcount.withdrawal(100.00);
+      samirasAccount.withdrawal(100.00);
+      samirasAccount.deposit(50.00);
+      samirasAccount.withdrawal(100.00);
 
-      samirasAcount.deposit(55.0);
-      samirasAcount.withdrawal(100.00);
+      samirasAccount.deposit(55.0);
+      samirasAccount.withdrawal(100.00);
 
     }
 }
