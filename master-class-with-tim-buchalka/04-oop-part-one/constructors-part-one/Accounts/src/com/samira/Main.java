@@ -3,11 +3,10 @@ package com.samira;
 public class Main {
 
     public static void main(String[] args) {
-      Account samirasAccount = new Account("77777",0.00,"Samira Karimi");
+      Account samirasAccount = new Account();
 
       System.out.println(samirasAccount.getNumber());
       System.out.println(samirasAccount.getBalance());
-      System.out.println(samirasAccount.getCustomerName());
 
       samirasAccount.withdrawal(100.00);
       samirasAccount.deposit(50.00);

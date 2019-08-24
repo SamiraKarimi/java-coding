@@ -6,10 +6,12 @@ public class Account {
     private String customerName;
 
     public Account(){
+        this("12345",2.50,"Default name");
         System.out.println("Empty constructor called");
     }
 
     public  Account(String number,double balance,String customerName){
+        System.out.println("Account constructor with parameters called");
         this.number = number;
         this.balance = balance;
         this.customerName = customerName;
